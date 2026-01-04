@@ -15,6 +15,6 @@ cp -r target/dx/watch_me_front/release/web/public docs
 Remove-Item -Recurse -Force docs
 Copy-Item -Recurse -Force target\dx\watch_me_front\release\web\public docs
 
-git add docs
+git add .
 git commit -m "deploy wasm"
 git push
