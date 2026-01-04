@@ -32,8 +32,8 @@ fn main() {
 
 #[component]
 fn App() -> Element {
-    // let api_base = "https://watchme-cyril-cf3191-9segqxl7.leapcell.dev";
-    let api_base = "http://localhost:8080";
+    let api_base = "https://watchme-cyril-cf3191-9segqxl7.leapcell.dev";
+    // let api_base = "http://localhost:8080";
     let state = use_signal(|| AppState::new(api_base));
 
     use_context_provider(|| state);
