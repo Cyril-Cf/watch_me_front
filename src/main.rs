@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 use ui::components::navbar::Navbar;
-use ui::pages::{home::Home, login::Login, register::Register};
+use ui::pages::{account::Account, home::Home, login::Login, register::Register};
 use ui::state::app::AppState;
 
 mod domain;
@@ -18,7 +18,10 @@ enum Route {
         Login {},
 
         #[route("/register")]
-        Register {}
+        Register {},
+
+        #[route("/account")]
+        Account {},
 }
 
 const MAIN_CSS: Asset = asset!("assets/tailwind.css");
