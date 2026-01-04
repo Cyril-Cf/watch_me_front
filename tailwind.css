@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+    --primary: #13ee1324;
+    --secondary: red;
+    --text_color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: (var(--text_color));
+    background-color: var(--primary);
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+}
